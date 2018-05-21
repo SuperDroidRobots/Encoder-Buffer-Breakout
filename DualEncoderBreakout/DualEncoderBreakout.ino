@@ -73,7 +73,7 @@ void initEncoders() {
   // NOTE: For more information on commands, see datasheet
   digitalWrite(slaveSelectEnc2,LOW);        // Begin SPI conversation
   SPI.transfer(0x88);                       // Write to MDR0
-  SPI.transfer(0x03);                       // Configure to 4 byte mode
+  SPI.transfer(0x03);                       // Configure to X4 Quadrature Mode
   digitalWrite(slaveSelectEnc2,HIGH);       // Terminate SPI conversation 
 }
 
